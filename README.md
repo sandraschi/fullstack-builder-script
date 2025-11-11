@@ -12,7 +12,8 @@ This repository showcases the AI-generated PowerShell script that scaffolds a pr
 ```powershell
 # Run from the directory where you want the new project folder
 .
-\new-fullstack-app.ps1 -AppName "MyApp" -OutputPath "C:\\Projects"
+\new-fullstack-app.ps1 -AppName "MyApp" [-OutputPath "C:\Projects"]
+# -OutputPath is optional; when omitted the script writes to the current directory.
 ```
 
 > **Note**: The generator assumes Windows with Docker Desktop available. A fresh `docker-compose up` smoke test is recommended after generation to validate the scaffold.
