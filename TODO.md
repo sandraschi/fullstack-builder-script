@@ -1,0 +1,6 @@
+- Split `new-fullstack-app.ps1` into reusable modules/functions and document the refactoring approach.
+- Add secrets management guidance (`.env` scaffolding, rotation instructions) for the generated stack.
+- Scaffold testing harnesses (backend + frontend unit tests, end-to-end samples) and include example specs.
+- Provide CI/CD templates (e.g., GitHub Actions/Azure DevOps) to lint, test, and build the generated app.
+- Expand monitoring documentation covering dashboard usage, alerting, and authentication wiring.
+- Extend operational docs with runbooks for migrations, local dev workflow, deployment, and troubleshooting.
