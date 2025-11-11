@@ -18,6 +18,24 @@ This repository showcases the AI-generated PowerShell script that scaffolds a pr
 
 > **Note**: The generator assumes Windows with Docker Desktop available. A fresh `docker-compose up` smoke test is recommended after generation to validate the scaffold.
 
+## Run the Generated App
+```powershell
+# From the generated project root (e.g., .\MyApp)
+.\START.ps1
+```
+
+The starter script checks Docker Desktop, brings up the full stack with `docker-compose up -d`, waits a few seconds, and then launches the browser.
+
+- Dashboard/UI: `http://localhost:9132`
+- FastAPI backend: `http://localhost:8000`
+- Grafana monitoring: `http://localhost:3001`
+
+Stop the stack when you are done:
+```powershell
+# From the same project root
+docker-compose down
+```
+
 ## Provenance
 - Script location: `new-fullstack-app.ps1`
 - Source: AI-assisted session using Cursor
